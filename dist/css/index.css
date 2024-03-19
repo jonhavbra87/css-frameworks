@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .bg-secondary {
   background: linear-gradient(-225deg, #ff5e98, #0F213E);
+  background-position: fixed;
 }
 
 .bg-navbar {
