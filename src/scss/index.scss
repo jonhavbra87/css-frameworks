@@ -5,20 +5,22 @@ $purple:  #9b76f8;
 $pink:    #f259a5;
 $red:     #f4495a;
 $orange:  #fa9a4c;
-$yellow:  #ffd760;
+$yellow:  #FFE6A4;
 $green:   #5cfeb2;
 $teal:    #5eefc4;
 $gray-600: #ff5e98; //secondary color
-$cyan:   #0F213E;
+$cyan:   #AD8211;
 $gray-300: #000; //border color
 
-.bg-secondary {
-    background: linear-gradient(-225deg, $gray-600, $cyan);
-    background-position: fixed;
+
+.bg-primary {
+    background: linear-gradient(-225deg, $yellow, $cyan);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .bg-navbar {
-    background: linear-gradient(90deg, $gray-600, $cyan);
+    background: linear-gradient(90deg, $yellow, $cyan);
  }
 
 .custom-border-bottom {
@@ -28,6 +30,15 @@ $gray-300: #000; //border color
 .feed-background {
     background-color: #BF7791;
 }   
+
+.full-width {
+    width: 100%;
+}
+
+
+main {
+    padding-bottom: 80px;
+}
 
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
