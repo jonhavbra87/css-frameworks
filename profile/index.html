@@ -1,129 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile page</title>
-    <link rel="stylesheet" href="../dist/css/index.css" />
-    <script
-      defer
-      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-    ></script>
-  </head>
-  <body class="bg-primary vh-100">
-    <header>
-      <nav class="bg-primary container-fluid fixed-bottom py-3 px-3">
-        <ul class="nav justify-content-around align-items-center">
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5" href="/feed/"
-              ><i class="bi bi-house-door-fill"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="nav-link btn text-white fs-5">
-              <i class="bi bi-search-heart-fill"></i>
-            </button>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link text-white fs-5 active"
-              aria-current="page"
-              href="/"
-              ><i class="bi bi-plus-circle-fill"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5" href="/"
-              ><i class="bi bi-webcam-fill"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5" href="/profile/"
-              ><i class="bi bi-person-circle"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <section class="py-3 d-flex flex-row justify-content-around">
-            <button type="button" class="btn btn-info rounded-circle text-secondary"><ion-icon name="arrow-back-outline"></ion-icon>  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile page</title>
+  <link rel="stylesheet" href="../dist/css/index.css" />
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-primary vh-100">
+  <header>
+    <nav class="bg-primary container-fluid fixed-bottom py-3 px-3">
+      <ul class="nav justify-content-around align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5" href="/feed/"><i class="bi bi-house-door-fill"></i></a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="nav-link btn text-white fs-5">
+            <i class="bi bi-search-heart-fill"></i>
           </button>
-            <h1 class="text-center">Profile</h1>
-            <button type="button" class="btn btn-info rounded-circle text-secondary position-relative"><ion-icon name="chatbubble-ellipses-outline"></ion-icon><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark">
-              6+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5 active" aria-current="page" href="/"><i
+              class="bi bi-plus-circle-fill"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5" href="/"><i class="bi bi-webcam-fill"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5" href="/profile/"><i class="bi bi-person-circle"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="d-flex justify-content-between p-3">
+      <h1 class="text-capitalize norican-regular">polarise</h1>
+      <div>
+        <button type="button" class="btn btn-yellow rounded-circle text-light">
+          <i class="bi bi-bell-fill position-relative d-inline-block fs-3">
+            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-light rounded-circle">
+              <span class="visually-hidden">unread notification</span>
+            </span>
+          </i>
+        </button>
+        <button type="button" class="btn btn-yellow rounded-circle text-light">
+          <i class="bi bi-chat-heart-fill position-relative d-inline-block fs-3">
+            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-light rounded-circle">
               <span class="visually-hidden">unread messages</span>
-            </span></button>
-        </section>
-      <section class="container my-5">
-        <div class="card mx-auto border border-3 rounded position-relative">
-            <img class="position-absolute top-0 start-50 translate-middle rounded-circle border border-3" src="/content/AI-profile.jpg" style="width: 6rem;" alt="profile picture">
-            <div class="card-body py-0">
-                <div class="d-flex flex-row justify-content-between">
-                    <div>
-                        <p class="fw-bold fs-2">203K</p>
-                        <p class="text-capitalize">followers</p>
-                    </div>
-                    <div>
-                        <p class="fw-bold fs-2">1.3K</p>
-                        <p class="text-capitalize">following</p>
-                    </div>
-                </div>
-                <h5 class="card-title text-center">@Fluffy87</h5>
-                <p class="text-center">My name is Jon Are and I like to teleport to space!</p>
-                <div class="d-flex flex-row justify-content-around">
-                <button type="button" class="btn btn-dark rounded-4 py-2 px-4">follow</button>
-                <button type="button" class="btn btn-outline-dark rounded-4 py-2 px-4">message</button>
-              </div>
-              <div class="d-flex justify-content-around p-3">
-              <button type="button" class="btn btn-outline-dark text-capitalize border-0">all</button>
-              <button type="button" class="btn  border-bottom text-capitalize link-underline">photos</button>
-              <button type="button" class="btn btn-outline-dark text-capitalize border-0">videos</button>
+            </span>
+          </i>
+        </button>
+      </div>
+    </section>
+    <section class="container my-5">
+      <div class="card mx-auto border border-3 rounded position-relative">
+        <img class="position-absolute top-0 start-50 translate-middle rounded-circle border border-3"
+          src="/content/AI-profile.jpg" style="width: 6rem;" alt="profile picture">
+        <div class="card-body py-0">
+          <div class="d-flex flex-row justify-content-between">
+            <div>
+              <p class="fw-bold fs-2 raleway-bold">203K</p>
+              <p class="text-capitalize">followers</p>
             </div>
+            <div>
+              <p class="fw-bold fs-2 raleway-bold">1.3K</p>
+              <p class="text-capitalize">following</p>
+            </div>
+          </div>
+          <h5 class="card-title text-center raleway-bold">@Fluffy87</h5>
+          <p class="text-center fs-5">My name is Jon Are and I like to teleport to space!</p>
+          <div class="d-flex flex-row justify-content-around">
+            <button type="button" class="btn btn-dark rounded-4 py-2 px-4">follow</button>
+            <button type="button" class="btn btn-outline-dark rounded-4 py-2 px-4">message</button>
+          </div>
+          <div class="d-flex justify-content-around p-3">
+            <button type="button" class="btn btn-outline-dark text-capitalize border-0">all</button>
+            <button type="button" class="btn  border-bottom text-capitalize link-underline">photos</button>
+            <button type="button" class="btn btn-outline-dark text-capitalize border-0">videos</button>
+          </div>
         </div>
-      </section>
-      <section class="container">
-        <div class="card border border-3 rounded bg-light mx-auto">
+    </section>
+    <section class="container">
+      <div class="card border border-3 rounded bg-light mx-auto">
         <div class="card-body">
           <div class="row g-2">
             <div class="col-md-8">
-              <img src="https://source.unsplash.com/random/800x600?italy,summer" class="img-fluid rounded" alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?italy,summer" class="img-fluid rounded"
+                alt="Italia Sommer">
             </div>
             <div class="col-md-4 d-flex flex-column justify-content-between">
-              <img src="https://source.unsplash.com/random/800x600?italy,summer" class="img-fluid rounded mb-2" alt="Italia Sommer">
-              <img src="https://source.unsplash.com/random/800x600?rome,summer" class="img-fluid rounded" alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?italy,summer" class="img-fluid rounded mb-2"
+                alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?rome,summer" class="img-fluid rounded"
+                alt="Italia Sommer">
             </div>
           </div>
-      
+
           <div class="row g-2 my-2">
             <div class="col-md-4">
-              <img src="https://source.unsplash.com/random/800x600?florence,summer" class="img-fluid rounded" alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?florence,summer" class="img-fluid rounded"
+                alt="Italia Sommer">
             </div>
             <div class="col-md-4">
-              <img src="https://source.unsplash.com/random/800x600?venice,summer" class="img-fluid rounded" alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?venice,summer" class="img-fluid rounded"
+                alt="Italia Sommer">
             </div>
             <div class="col-md-4">
-              <img src="https://source.unsplash.com/random/800x600?milan,summer" class="img-fluid rounded" alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?milan,summer" class="img-fluid rounded"
+                alt="Italia Sommer">
             </div>
           </div>
-      
+
           <div class="row g-2">
             <div class="col-md-4 d-flex flex-column justify-content-between">
-              <img src="https://source.unsplash.com/random/800x600?sicily,summer" class="img-fluid rounded mb-2" alt="Italia Sommer">
-              <img src="https://source.unsplash.com/random/800x600?naples,summer" class="img-fluid rounded" alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?sicily,summer" class="img-fluid rounded mb-2"
+                alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?naples,summer" class="img-fluid rounded"
+                alt="Italia Sommer">
             </div>
             <div class="col-md-8">
-              <img src="https://source.unsplash.com/random/800x600?tuscany,summer" class="img-fluid rounded" alt="Italia Sommer">
+              <img src="https://source.unsplash.com/random/800x600?tuscany,summer" class="img-fluid rounded"
+                alt="Italia Sommer">
             </div>
           </div>
         </div>
       </div>
-      </section>
-      
-      
-      
-    </main>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
+    </section>
+
+
+
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

@@ -1,15 +1,15 @@
 // scss-docs-start color-variables
-$blue:    purple;
-$indigo:  #9055ee;
-$purple:  #9b76f8;
-$pink:    #f259a5;
-$red:     #f4495a;
-$orange:  #fa9a4c;
-$yellow:  #FFE6A4;
-$green:   #5cfeb2;
-$teal:    #5eefc4;
+$blue: purple;
+$indigo: #9055ee;
+$purple: #9b76f8;
+$pink: #f259a5;
+$red: #f4495a;
+$orange: #fa9a4c;
+$yellow: #FFE6A4;
+$green: #5cfeb2;
+$teal: #5eefc4;
 $gray-600: #ff5e98; //secondary color
-$cyan:   #AD8211;
+$cyan: #AD8211;
 $gray-300: #000; //border color
 
 
@@ -21,7 +21,7 @@ $gray-300: #000; //border color
 
 .bg-navbar {
     background: linear-gradient(90deg, $yellow, $cyan);
- }
+}
 
 .custom-border-bottom {
     border-bottom: 3px solid !important;
@@ -29,7 +29,7 @@ $gray-300: #000; //border color
 
 .feed-background {
     background-color: #BF7791;
-}   
+}
 
 .full-width {
     width: 100%;
@@ -40,5 +40,47 @@ main {
     padding-bottom: 80px;
 }
 
+
+.norican-regular {
+    font-family: "Norican", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+/* .raleway-bold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+p {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.card-profile {}
+
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
