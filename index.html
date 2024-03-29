@@ -9,7 +9,7 @@
   <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="bg-dark vh-100">
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
   <header>
     <nav class="bg-primary container-fluid fixed-bottom py-3 px-3">
       <ul class="nav justify-content-around align-items-center">
@@ -34,51 +34,102 @@
       </ul>
     </nav>
   </header>
-  <main class="container h-100">
-		<div class="d-flex justify-content-center h-100">
-			<div class="user_card">
-				<div class="d-flex justify-content-center">
-					<div class="brand_logo_container">
-						<img src="content/AI-profile.jpg" class="brand_logo" alt="Logo">
-					</div>
-				</div>
-				<div class="d-flex justify-content-center form_container">
-					<form>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="bi bi-file-person-fill"></i></span>
-							</div>
-							<input type="text" name="" class="form-control input_user" value="" placeholder="username">
-						</div>
-						<div class="input-group mb-2">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="bi bi-key-fill"></i></span>
-							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="password">
-						</div>
-						<div class="form-group">
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="customControlInline">
-								<label class="custom-control-label" for="customControlInline">Remember me</label>
-							</div>
-						</div>
-							<div class="d-flex justify-content-center mt-3 login_container">
-				 	<button type="button" name="button" class="btn login_btn">Login</button>
-				   </div>
-					</form>
-				</div>
-		
-				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
-						Don't have an account? <a href="#" class="ml-2">Sign Up</a>
-					</div>
-					<div class="d-flex justify-content-center links">
-						<a href="#">Forgot your password?</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
+  <main>
+    <section class="container bg-primary rounded-1">
+        <div class="row w-100 position-relative">
+          <!-- Bildet og informasjonen -->
+          <div class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column">
+            <div class="brand_logo_container mb-3">
+              <img src="content/AI-profile.jpg" class="brand_logo" alt="Logo">
+            </div>
+            <div class="mt-4">
+              <p>Your descriptive text here. Explain what your app does or why users should sign up. Add any other information you consider important.</p>
+              <div class="d-flex justify-content-center links">
+                Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+              </div>
+              <div class="d-flex justify-content-center links">
+                <a href="#">Forgot your password?</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Skjemaet -->
+          <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+            <form class="was-validated">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="username" minlength="2" required>
+                <div class="invalid-feedback">
+                  Please enter your username.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="password" minlength="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$" required>
+                <div class="invalid-feedback text-light">
+                  Password must include letters & numbers.
+                </div>
+              </div>
+      
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                <label class="form-check-label text-dark" for="validationFormCheck1">Remember me</label>
+                <div class="invalid-feedback">You must agree before submitting.</div>
+              </div>
+      
+              <div class="mb-3 d-flex justify-content-center">
+                <button class="btn btn-primary px-4" type="submit">Submit form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+    <!-- <section class="container h-100">
+        <div class="user_card container position-relative">
+            <div class="d-flex justify-content-center mb-5 position-absolute top-0 start-50 translate-middle-x">
+                <div class="brand_logo_container">
+                    <img src="content/AI-profile.jpg" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <form class="was-validated mt-5 col-md-6">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="username" minlength="2" required>
+                    <div class="invalid-feedback">
+                        Please enter your username.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="password" minlength="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$" required>
+                    <div class="invalid-feedback text-light">
+                        Password must include letters & numbers.
+                    </div>
+                </div>
+                
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                    <label class="form-check-label text-dark" for="validationFormCheck1">Remember me</label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+            
+                <div class="mb-3 d-flex justify-content-center">
+                    <button class="btn btn-primary px-4"  type="submit">Submit form</button>
+                </div>
+            
+            </form>
+            <div class="mt-4">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center links">
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
   </main>
   <footer></footer>
 </body>

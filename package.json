@@ -4,10 +4,11 @@
   "description": "An social media app for css-frameworks-ca",
   "scripts": {
     "test": "echo \"This is my CA delivery in css-frameworks\" && exit 1",
-    "build": "sass src/scss:dist/css",
+    "build": "sass src/scss:dist/css && npm run copy-icons",
     "dev": "npm-run-all --parallel watch start-server",
     "watch": "sass --watch src/scss:dist/css",
-    "start-server": "live-server"
+    "start-server": "live-server",
+    "copy-icons": "cp node_modules/bootstrap-icons/font/fonts/* dist/fonts/"    
   },
   "repository": {
     "type": "git",
