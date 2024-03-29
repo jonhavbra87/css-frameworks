@@ -9,7 +9,7 @@
   <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="bg-primary vh-100">
+<body class="bg-dark vh-100">
   <header>
     <nav class="bg-primary container-fluid fixed-bottom py-3 px-3">
       <ul class="nav justify-content-around align-items-center">
@@ -26,7 +26,7 @@
               class="bi bi-plus-circle-fill"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white fs-5" href="/"><i class="bi bi-webcam-fill"></i></a>
+          <a class="nav-link text-white fs-5" href="/preview/"><i class="bi bi-webcam-fill"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white fs-5" href="/profile/"><i class="bi bi-person-circle"></i></a>
@@ -36,7 +36,7 @@
   </header>
   <main class="container">
     <section class="d-flex justify-content-between p-3">
-      <h1 class="text-capitalize norican-regular">polarise</h1>
+      <h1 class="text-capitalize norican-regular text-light">polarise</h1>
       <div>
         <button type="button" class="btn btn-yellow rounded-circle text-light">
           <i class="bi bi-bell-fill position-relative d-inline-block fs-3">
@@ -56,19 +56,32 @@
     </section>
     <section class="container d-flex flex-row flex-nowrap overflow-hidden gap-2">
       <div class="position-relative bg-dark bg-opacity-50 rounded-circle">
-        <img class="rounded-circle border border-3 object-fit-cover" style="width: 6rem" src="/content/AI-profile.jpg"
-          alt="person story" /><i class="bi bi-plus position-absolute start-50 translate-middle-x"></i>
+        <img class="rounded-circle border border-3 object-fit-cover" style="width: 4rem; height: 4rem;" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+             alt="person story" />
+        <span class="position-absolute bottom-0 end-0 translate-x">
+          <i class="bi bi-plus-circle text-dark fs-5" ></i>
+          <span class="visually-hidden">unread messages</span>
+        </span>
       </div>
-      <img class="rounded-circle border border-3 object-fit-cover" style="width: 6rem; height: 6rem"
+      
+  <!--     <div class="position-relative bg-dark bg-opacity-50 rounded-circle" >
+        <img class="rounded-circle border border-3 object-fit-cover" style="width: 4rem; height: 4rem;" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="person story" /><i class="bi bi-plus position-absolute bottom-0 end-0 translate-middle-y text-dark"></i><span class="position-absolute bottom-0 end-0 translate-middle-y badge rounded-circle bg-light">
+            
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        
+      </div> -->
+      <img class="rounded-circle border border-3 object-fit-cover" style="width: 4rem; height: 4rem"
         src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="person story" />
-      <img class="rounded-circle border border-3 object-fit-cover" style="width: 6rem; height: 6rem"
+      <img class="rounded-circle border border-3 object-fit-cover" style="width: 4rem; height: 4rem"
         src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="person story" />
-      <img class="rounded-circle border border-3 object-fit-cover" style="width: 6rem; height: 6rem"
+      <img class="rounded-circle border border-3 object-fit-cover" style="width: 4rem; height: 4rem"
         src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHNlbGZpZSUyMDMlM0EyfGVufDB8fDB8fHww"
         alt="person story" />
-      <img class="rounded-circle border border-3 object-fit-cover" style="width: 6rem; height: 6rem"
+      <img class="rounded-circle border border-3 object-fit-cover" style="width: 4rem; height: 4rem"
         src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?q=80&w=1317&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="person story" />
     </section>
@@ -80,7 +93,7 @@
               <h5 class="fw-bold col-10">@fluffy87</h5>
               <p class="text-wrap fw-light col-10">#summer #holliday #2023</p>
             </div>
-            <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="border border-2 col-2 img-fluid" alt="profile picture" />
           </div>
           <div class="position-relative">
             <img src="https://source.unsplash.com/random/800x600?italy,summer" class="img-fluid rounded-1"
@@ -108,7 +121,7 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="col-10">@fluffy87</h5>
+              <h5 class="col-10">@cregdaniel</h5>
               <p class="text-wrap fw-light col-10">#summer #sunset #2023</p>
             </div>
             <img
@@ -141,7 +154,7 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@nickymin</h5>
+              <h5 class="fw-bold col-10">@nickymin</h5>
               <p class="text-wrap fw-light col-10">
                 #summer #ice-cream #2023
               </p>
@@ -174,10 +187,10 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@henrich</h5>
+              <h5 class="fw-bold col-10">@henrich</h5>
               <p class="text-wrap fw-light col-10">#summer #pool #2023</p>
             </div>
-            <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="border border-2 col-2 img-fluid" alt="profile picture" />
           </div>
           <div class="position-relative">
             <img src="https://source.unsplash.com/random/800x600?summer,pool" class="img-fluid rounded-1"
@@ -208,7 +221,7 @@
               <h5 class="fw-bold col-10">@larsonvich</h5>
               <p class="text-wrap fw-light col-10">#summer #forest #2023</p>
             </div>
-            <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" class="border border-2 col-2 img-fluid" alt="profile picture" />
           </div>
           <div class="position-relative">
             <img src="https://source.unsplash.com/random/800x600?summer,forest" class="img-fluid rounded-1"
@@ -236,10 +249,10 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@bowtie</h5>
+              <h5 class="fw-bold col-10">@bowtie</h5>
               <p class="text-wrap fw-light col-10">#summer #flowers #2023</p>
             </div>
-            <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="border border-2 col-2 img-fluid" alt="profile picture" />
           </div>
           <div class="position-relative">
             <img src="https://source.unsplash.com/random/800x600?summer,flowers" class="img-fluid rounded-1"
@@ -267,10 +280,10 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@mr.pie</h5>
+              <h5 class="fw-bold col-10">@mr.pie</h5>
               <p class="text-wrap fw-light col-10">#summer #festival #2022</p>
             </div>
-            <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
+            <img src="https://images.unsplash.com/photo-1624561172888-ac93c696e10c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" class="border border-2 col-2 img-fluid" alt="profile picture" />
           </div>
           <div class="position-relative">
             <img src="https://source.unsplash.com/random/800x600?summer,festival" class="img-fluid rounded-1"
@@ -298,7 +311,7 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@augustus</h5>
+              <h5 class="fw-bold col-10">@augustus</h5>
               <p class="text-wrap fw-light col-10">
                 #summer #ice-cream #2023
               </p>
@@ -331,12 +344,12 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@marvin</h5>
+              <h5 class="fw-bold col-10">@marvin</h5>
               <p class="text-wrap fw-light col-10">
                 #summer #mountains #2023
               </p>
             </div>
-            <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
+            <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="border border-2 col-2 img-fluid" alt="profile picture" />
           </div>
           <div class="position-relative">
             <img src="https://source.unsplash.com/random/800x600?summer,mountains" class="img-fluid rounded-1"
@@ -364,7 +377,7 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@iraction</h5>
+              <h5 class="fw-bold col-10">@iraction</h5>
               <p class="text-wrap fw-light col-10">#summer #lake #2023</p>
             </div>
             <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
@@ -398,7 +411,7 @@
               <h5 class="fw-bold col-10">@littlemountain</h5>
               <p class="text-wrap fw-light col-10">#summer #camping #2023</p>
             </div>
-            <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
+            <img src="https://images.unsplash.com/photo-1617251997846-b6139ae96682?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxwcm9maWxlJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D" class="border border-2 col-2 img-fluid" alt="profile picture" />
           </div>
           <div class="position-relative">
             <img src="https://source.unsplash.com/random/800x600?summer,camping" class="img-fluid rounded-1"
@@ -426,7 +439,7 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@daniel_san</h5>
+              <h5 class="fw-bold col-10">@daniel_san</h5>
               <p class="text-wrap fw-light col-10">#summer #roadtrip #2023</p>
             </div>
             <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
@@ -457,7 +470,7 @@
         <div class="card-body px-1 m-0">
           <div class="card-title d-flex flex-row align-items-start justify-content-between py-1">
             <div class="d-flex flex-column">
-              <h5 class="text-capitalize fw-bold col-10">@era_noj</h5>
+              <h5 class="fw-bold col-10">@era_noj</h5>
               <p class="text-wrap fw-light col-10">#summer #picnic #2022</p>
             </div>
             <img src="/content/AI-profile.jpg" class="border border-2 col-2 img-fluid" alt="profile picture" />
