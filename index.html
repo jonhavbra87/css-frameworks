@@ -58,13 +58,13 @@
               <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" placeholder="username" minlength="2" required>
-                <div class="invalid-feedback">
+                <div class="invalid-feedback text-secondary">
                   Please enter your username.
                 </div>
               </div>
               <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="password" minlength="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$" required>
+                <label for="password" class="form-label text-secondary">Password</label>
+                <input type="password" class="form-control text-secondary" id="password" placeholder="password" minlength="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$" required>
                 <div class="invalid-feedback text-light">
                   Password must include letters & numbers.
                 </div>
@@ -73,11 +73,11 @@
               <div class="form-check mb-3">
                 <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
                 <label class="form-check-label text-dark" for="validationFormCheck1">Remember me</label>
-                <div class="invalid-feedback">You must agree before submitting.</div>
+                <div class="invalid-feedback text-secondary">You must agree before submitting.</div>
               </div>
       
               <div class="mb-3 d-flex justify-content-center">
-                <button class="btn btn-primary px-4" type="submit">Login</button>
+                <button class="btn btn-dark px-4" type="submit">Login</button>
               </div>
             </form>
           </div>
