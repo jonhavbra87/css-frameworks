@@ -10,33 +10,9 @@
   <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
-  <header>
-    <nav class="bg-primary container-fluid fixed-bottom py-3 px-3">
-      <ul class="nav justify-content-around align-items-center">
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5" href="/feed/"><i class="bi bi-house-door-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="nav-link btn text-white fs-5">
-            <i class="bi bi-search-heart-fill"></i>
-          </button>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 active" aria-current="page" href="/"><i
-              class="bi bi-plus-circle-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5" href="/preview/"><i class="bi bi-webcam-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5" href="/profile/"><i class="bi bi-person-circle"></i></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="container bg-primary rounded-1">
+<body class="bg-dark vh-100 d-flex">
+  <main class="container d-flex justify-content-center align-items-center my-auto">
+    <section class="bg-primary rounded-1 ">
         <div class="row w-100 position-relative">
 
           <div class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column">
@@ -45,12 +21,14 @@
             </div>
             <div class="mt-5 pt-5">
               <p>Welcome to Polarise! Enjoy your connections and trip down memory lane. Take pictures and share with friends and family, just that the pictures is in polaroid from - just like the 80s! </p>
-              <div class="d-flex justify-content-center links">
-                Don't have an account? <a href="#" class="ml-2">Sign Up</a>
-              </div>
-              <div class="d-flex justify-content-center links">
-                <a href="#">Forgot your password?</a>
-              </div>
+              <div class="d-flex justify-content-center flex-column align-items-center p-2">
+                <div class=" link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+                </div>
+                <div class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </div>
             </div>
           </div>
           <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
@@ -64,7 +42,7 @@
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label text-secondary">Password</label>
-                <input type="password" class="form-control text-secondary" id="password" placeholder="password" minlength="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$" required>
+                <input type="password" class="form-control" id="password" placeholder="password" minlength="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$" required>
                 <div class="invalid-feedback text-light">
                   Password must include letters & numbers.
                 </div>
@@ -130,7 +108,6 @@
     </section> -->
     
   </main>
-  <footer></footer>
 </body>
 
 </html>
