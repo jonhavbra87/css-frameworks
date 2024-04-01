@@ -1,68 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed Page</title>
+    <link rel="stylesheet" href="../dist/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      defer
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feed Page</title>
-  <link rel="stylesheet" href="../dist/css/index.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-
-<body class="bg-dark vh-100 d-flex">
-  <main class="container d-flex justify-content-center align-items-center my-auto">
-    <section class="bg-primary rounded-1 ">
+  <body class="bg-dark vh-100 d-flex">
+    <main
+      class="container d-flex justify-content-center align-items-center my-auto"
+    >
+      <section class="bg-primary rounded-1">
         <div class="row w-100 position-relative">
-
-          <div class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column">
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column"
+          >
             <div class="brand_logo_container mb-3">
-              <img src="content/AI-profile.jpg" class="brand_logo" alt="Logo">
+              <img
+                src="/content/logopolorise.jpg"
+                class="brand_logo"
+                alt="Logo"
+              />
             </div>
-            <div class="mt-5 pt-5">
-              <p>Welcome to Polarise! Enjoy your connections and trip down memory lane. Take pictures and share with friends and family, just that the pictures is in polaroid from - just like the 80s! </p>
-              <div class="d-flex justify-content-center flex-column align-items-center p-2">
-                <div class=" link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                    Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+            <div class="mt-5 pt-5 col-10 text-break">
+              <p>
+                Welcome to Polarise! Enjoy your connections and trip down memory
+                lane. Take pictures and share with friends and family, only the
+                pictures is in polaroid form
+                <span class="fw-semibold">- just like the 80s!</span>
+              </p>
+              <div
+                class="d-flex justify-content-center flex-column align-items-center p-2"
+              >
+                <div
+                  class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >
+                  Don't have an account? <a href="#" class="ml-2">Sign Up</a>
                 </div>
-                <div class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                    <a href="#">Forgot your password?</a>
+                <div
+                  class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >
+                  <a href="#">Forgot your password?</a>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-            <form class="was-validated" action="/profile/" method="POST">
-              <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="username" minlength="2" required>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <form class="was-validated" action="/profile/" method="GET">
+              <div class="mb-3 pt-3">
+                <label for="username" class="form-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="username"
+                  minlength="2"
+                  required
+                />
                 <div class="invalid-feedback text-secondary">
                   Please enter your username.
                 </div>
               </div>
               <div class="mb-3">
-                <label for="password" class="form-label text-secondary">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="password" minlength="12" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$" required>
-                <div class="invalid-feedback text-light">
+                <label for="password" class="form-label text-secondary"></label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="password"
+                  minlength="12"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$"
+                  required
+                />
+                <div class="invalid-feedback text-secondary">
                   Password must include letters & numbers.
                 </div>
               </div>
-      
+
               <div class="form-check mb-3">
-                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-                <label class="form-check-label text-dark" for="validationFormCheck1">Remember me</label>
-                <div class="invalid-feedback text-secondary">You must agree before submitting.</div>
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                />
+                <label
+                  class="form-check-label text-dark"
+                  for="validationFormCheck1"
+                  >Remember me</label
+                >
               </div>
-      
+
               <div class="mb-3 d-flex justify-content-center">
-                <button class="btn btn-dark px-4" type="submit">Login</button>
+                <button class="btn btn-dark px-5 py-2" type="submit">
+                  Login
+                </button>
               </div>
             </form>
           </div>
         </div>
       </section>
-      
-    <!-- <section class="container h-100">
+
+      <!-- <section class="container h-100">
         <div class="user_card container position-relative">
             <div class="d-flex justify-content-center mb-5 position-absolute top-0 start-50 translate-middle-x">
                 <div class="brand_logo_container">
@@ -106,8 +155,6 @@
             </div>
         </div>
     </section> -->
-    
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
