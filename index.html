@@ -20,7 +20,7 @@
       class="container d-flex justify-content-center align-items-center my-auto"
     >
       <section class="bg-primary rounded-1">
-        <div class="row w-100 position-relative">
+        <div class="row position-relative">
           <div
             class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column"
           >
@@ -57,8 +57,12 @@
           <div
             class="col-12 col-md-6 d-flex align-items-center justify-content-center"
           >
-            <form class="was-validated" action="/profile/" method="GET">
-              <div class="mb-3 pt-3">
+            <form
+              class="was-validated row g-3 justify-content-center align-items-center"
+              action="/profile/"
+              method="GET"
+            >
+              <div class="mb-3 pt-3 col-10 col-m-6">
                 <label for="username" class="form-label"></label>
                 <input
                   type="text"
@@ -72,7 +76,7 @@
                   Please enter your username.
                 </div>
               </div>
-              <div class="mb-3">
+              <div class="mb-3 col-10 col-m-6">
                 <label for="password" class="form-label text-secondary"></label>
                 <input
                   type="password"
@@ -88,7 +92,7 @@
                 </div>
               </div>
 
-              <div class="form-check mb-3">
+              <div class="form-check mb-3 col-10 col-m-6">
                 <input
                   type="checkbox"
                   class="form-check-input"
