@@ -125,31 +125,48 @@ p {
 }
 
 
-/* Tilpasset farge for godkjent (valid) tilstand med #6997FF */
-html .form-control.is-valid:focus, 
-html .was-validated .form-control:valid:focus {
-  border-color: #6997FF !important; /* Medium blå */
-  box-shadow: 0 0 0 0.2rem rgba(105, 151, 255, 0.5) !important; /* Lysere blå skygge for fokus */
-}
 
-html .was-validated .form-control:valid,
-html .form-control.is-valid {
-  border-color: #6997FF !important; /* Medium blå for gyldig input-grense */
-}
+// html .form-control.is-valid:focus, 
+// html .was-validated .form-control:valid:focus {
+//   border-color: #6997FF !important; 
+//   box-shadow: 0 0 0 0.2rem rgba(105, 151, 255, 0.5) !important; 
+// }
+
+// html .was-validated .form-control:valid,
+// html .form-control.is-valid {
+//   border-color: #6997FF !important; 
+// }
 
 
-/* Tilpasset farge for ikke godkjent (invalid) tilstand */
-html .form-control.is-invalid:focus, 
-html .was-validated .form-control:invalid:focus {
-  border-color: #E53935 !important; /* Klar rød */
-  box-shadow: 0 0 0 0.2rem rgba(229, 57, 53, 0.25) !important;
-}
 
-html .was-validated .form-control:invalid,
-html .form-control.is-invalid {
-  border-color: #E53935 !important;
-}
+// html .form-control.is-invalid:focus, 
+// html .was-validated .form-control:invalid:focus {
+//   border-color: #E53935 !important; 
+//   box-shadow: 0 0 0 0.2rem rgba(229, 57, 53, 0.25) !important;
+// }
 
+// html .was-validated .form-control:invalid,
+// html .form-control.is-invalid {
+//   border-color: #E53935 !important;
+// }
+// .background-img {
+//     color: #6997FF;
+//     display: none; 
+//   }
+  
+//   .icon-invalid {
+//     color: #E53935 ;
+//     display: none; 
+//   }
+  
+//   .is-valid + .icon-valid {
+//     display: inline; 
+//   }
+  
+//   .is-invalid + .icon-invalid {
+//     display: inline; 
+//   }
+  
 
 
 @import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
