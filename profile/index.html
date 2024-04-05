@@ -8,29 +8,57 @@
   <link rel="stylesheet" href="../dist/css/index.css" />
 </head>
 
-<body class="bg-dark vh-100">
+<body class="bg-dark">
   <header>
-    <nav class="bg-primary container-fluid fixed-bottom py-3 px-3">
-      <ul class="nav justify-content-around align-items-center">
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5" href="/feed/"><i class="bi bi-house-door-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="nav-link btn text-white fs-5">
-            <i class="bi bi-search-heart-fill"></i>
-          </button>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 active" href="/post/"><i
-              class="bi bi-plus-circle-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5" href="/preview/"><i class="bi bi-webcam-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5" aria-current="page" href="/profile/"><i class="bi bi-person-circle"></i></a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top py-3 px-3">
+      <div class="container-fluid justify-content-lg-around">
+          <a class="navbar-brand" href="/feed/">
+            <img src="/content/logopolorise.jpg"  class="rounded-2" alt="Bootstrap" width="40" height="40">
+          </a>
+          <a class="navbar-brand norican-regular fs-1" href="/feed/">Polarise</a>
+   
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-white text-capitalize fs-2 fw-semibold" href="/feed/"
+                >home</i
+              ></a>
+            </li>
+         
+            <li class="nav-item">
+              <a
+                class="nav-link text-white text-capitalize fs-2 fw-semibold"
+                href="/post/"
+                >new post</i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a 
+              class="nav-link text-white text-capitalize fs-2 fw-semibold active" 
+              aria-current="page"
+              href="/profile/"
+                >profile</a>
+            </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+            </li>
+          </ul>
+        </div>
+      </div>    
     </nav>
   </header>
   <main>
