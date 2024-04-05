@@ -16,101 +16,106 @@
   </head>
 
   <body class="bg-dark vh-100 d-flex">
-    <main
-      class="container d-flex justify-content-center align-items-end align-items-md-center"
-    >
-      <section class="bg-primary rounded-2">
-        <div class="row position-relative p-md-2 p-lg-5">
-          <div
-            class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column"
-          >
-            <div class="brand_logo_container mb-3">
-              <img
-                src="/content/logopolorise.jpg"
-                class="brand_logo"
-                alt="Logo"
-              />
-            </div>
-            <div class="mt-5 pt-5 col-10 text-break">
-              <p class="lead">
-                Welcome to Polarise! Enjoy your connections and trip down memory
-                lane. Take pictures and share with friends and family, only the
-                pictures is in polaroid form
-                <span class="fw-semibold">- just like the 80s!</span>
-              </p>
-              <div
-                class="d-flex justify-content-center flex-column align-items-center p-2"
-              >
-                <div
-                  class="fs-6 link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
-                  Don't have an account? <a href="#" class="ml-2">Sign Up</a>
-                </div>
-                <div
-                  class="fs-6 link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
-                  <a href="#">Forgot your password?</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-12 col-md-6 d-flex align-items-center justify-content-center"
-          >
-            <form
-              class="was-validated row justify-content-center align-items-center"
-              action="/profile/"
-              method="GET"
+    <main class="container">
+      <section class="row">
+        <div
+          class="bg-primary rounded-2 col-10 mx-auto d-flex justify-content-center align-items-end align-items-md-center"
+        >
+          <div class="position-relative p-md-2 p-lg-5">
+            <div
+              class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column"
             >
-              <div class="mb-3 pt-3 col-10 col-m-6">
-                <label for="username" class="form-label"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="username"
-                  placeholder="username"
-                  minlength="2"
-                  required
+              <div class="brand_logo_container">
+                <img
+                  src="/content/logopolorise.jpg"
+                  class="brand_logo"
+                  alt="Logo"
                 />
-                <div class="invalid-feedback text-secondary">
-                  Please enter your username.
-                </div>
               </div>
-              <div class="mb-3 col-10 col-m-6">
-                <label for="password" class="form-label text-secondary"></label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="password"
-                  minlength="12"
-                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$"
-                  required
-                />
-                <div class="invalid-feedback text-secondary">
-                  Password must include at least 12 letters & numbers.
-                </div>
-              </div>
-
-              <div class="form-check mb-3 col-8 col-m-6">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="validationFormCheck1"
-                />
-                <label
-                  class="form-check-label text-dark"
-                  for="validationFormCheck1"
-                  >Remember me</label
+              <div class="mt-5 pt-5 col-10 text-break">
+                <p class="lead">
+                  Welcome to Polarise! Enjoy your connections and trip down
+                  memory lane. Take pictures and share with friends and family,
+                  only the pictures is in polaroid form
+                  <span class="fw-semibold">- just like the 80s!</span>
+                </p>
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center p-2"
                 >
+                  <div
+                    class="fs-6 link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >
+                    Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+                  </div>
+                  <div
+                    class="fs-6 link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >
+                    <a href="#">Forgot your password?</a>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <form
+                class="was-validated row justify-content-center align-items-center"
+                action="/profile/"
+                method="GET"
+              >
+                <div class="mb-2 pt-3 col-10 col-m-6">
+                  <label for="username" class="form-label"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="username"
+                    minlength="2"
+                    required
+                  />
+                  <div class="invalid-feedback text-secondary">
+                    Please enter your username.
+                  </div>
+                </div>
+                <div class="mb-2 col-10 col-m-6">
+                  <label
+                    for="password"
+                    class="form-label text-secondary"
+                  ></label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="password"
+                    minlength="12"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{12,}$"
+                    required
+                  />
+                  <div class="invalid-feedback text-secondary">
+                    Password must include at least 12 letters & numbers.
+                  </div>
+                </div>
 
-              <div class="mb-3 d-flex justify-content-center">
-                <button class="btn btn-dark px-5 py-2" type="submit">
-                  Login
-                </button>
-              </div>
-            </form>
+                <div class="form-check mb-2 col-8 col-m-6">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="validationFormCheck1"
+                  />
+                  <label
+                    class="form-check-label text-dark"
+                    for="validationFormCheck1"
+                    >Remember me</label
+                  >
+                </div>
+
+                <div class="mb-3 d-flex justify-content-center">
+                  <button class="btn btn-dark px-5 py-2" type="submit">
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
